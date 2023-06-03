@@ -1,4 +1,4 @@
-# News Allert - aplikazja na zaliczenie labolatoriów z Aplikacji Mobilnych.
+# News Allert - aplikacja na zaliczenie labolatoriów z Aplikacji Mobilnych.
 
 
 Aplikacja wykonana przy uzyciu React Native, Expo, TypeScript
