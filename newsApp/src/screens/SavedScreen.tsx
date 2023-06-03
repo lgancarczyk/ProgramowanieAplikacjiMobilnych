@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import { StyleSheet, Text, View, ActivityIndicator, FlatList, Image, TouchableWithoutFeedback, ImageBackground, Button, Alert } from "react-native";
 import NewsPreviewComponent from "../components/NewsPreviewComponent";
 import { COLORS } from "../resources/colors";
-import '../extensions/stringExtensions';
+import '../extensions/stringExtensions.extension';
 import { getData } from "../helpers/AsyncStorageHelper";
 import empty from "../resources/images/empty.png"; 
 

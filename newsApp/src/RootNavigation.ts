@@ -8,8 +8,3 @@ export function navigate(name:string, params:any) {
       navigationRef.navigate(name, params);
     }
   }
-// export const navigationRef = React.createRef();
-
-// export function navigate(name:string){
-
-// }

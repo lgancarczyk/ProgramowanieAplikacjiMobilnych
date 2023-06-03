@@ -1,23 +1,16 @@
-import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Image, TouchableWithoutFeedback, ImageBackground } from "react-native";
+import React, { Fragment } from "react";
+import { StyleSheet, Text, View, TouchableWithoutFeedback, ImageBackground } from "react-native";
 import * as RootNavigation from '../RootNavigation';
 import { COLORS } from '../resources/colors';
 
 export default function({data}){
-
-
     const gotoTestStackScreen = () => {
-		//props.navigation.navigate('Details');
-        console.log(data);
         RootNavigation.navigate('Details', data);
 	};
 
     return(
-        <TouchableWithoutFeedback
-            // onPress={() => data.navigate('Details', {url: data.url})} >
+        <TouchableWithoutFeedback testID="pressMeButton"
             onPress={gotoTestStackScreen} >
-
-
             <View style={styles.listings}>
                 <ImageBackground source={{uri: data.urlToImage}} resizeMode="cover" style={styles.thumbnail}>
                     <View style={styles.thumbnailContainer}>

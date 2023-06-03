@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Image, Pressable, ScrollView, Linking } from "react-native";
 import { COLORS } from "../resources/colors";
-import '../extensions/stringExtensions';
+import '../extensions/stringExtensions.extension';
 import hearth from '../resources/images/hearth.png'
-import { display } from "../types/display.type";
 import { addNews, ifNewsExistInStorage, removeNews } from "../helpers/AsyncStorageHelper";
 
 export default function DetailsScreen(props){

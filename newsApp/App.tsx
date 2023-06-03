@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
@@ -15,21 +15,24 @@ import { COLORS } from './src/resources/colors';
 const Stack = createStackNavigator();
 
 export default function App() {
-    let [fontsLoaded] = useFonts({
-      'OpenSans': require('./src/resources/fonts/OpenSans-Regular.ttf'),
-      'ComicSans': require('./src/resources/fonts/ComicSans.ttf')
-    })
+    // let [fontsLoaded] = useFonts({
+    //   'OpenSans': require('./src/resources/fonts/OpenSans-Regular.ttf'),
+    //   'ComicSans': require('./src/resources/fonts/ComicSans.ttf')
+    // })
 
-  if(!fontsLoaded){
-    return <AppLoading />;
-  }
-  else{
+  // if(!fontsLoaded){
+  //   return <AppLoading />;
+  // }
+  // else{
     return (
+      // <View>
+      //   <Text>xxxx</Text>
+      // </View>
       <SafeAreaView style={{ flex:1, backgroundColor: COLORS.Blue }}>
         <Index />
       </SafeAreaView>
     );
-  }
+  //}
 }
 
 function Index(){

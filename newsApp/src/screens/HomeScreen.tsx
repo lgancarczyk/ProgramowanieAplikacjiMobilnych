@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import { StyleSheet, Text, View, ActivityIndicator, FlatList, Image, TouchableWithoutFeedback, ImageBackground, SafeAreaView, ScrollView, RefreshControl } from "react-native";
+import { StyleSheet, View, ActivityIndicator, FlatList, RefreshControl } from "react-native";
 import NewsPreviewComponent from "../components/NewsPreviewComponent";
 import { COLORS } from "../resources/colors";
-import '../extensions/stringExtensions';
+import '../extensions/stringExtensions.extension';
 
 export default function HomeScreen(props){
     const [dataLoading, finishLoading] = useState(true);
